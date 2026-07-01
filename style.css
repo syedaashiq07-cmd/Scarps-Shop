@@ -359,13 +359,10 @@ img {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem;
   z-index: 1001;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 2.25rem;
-  width: 2.25rem;
+  margin: 0;
+  line-height: 1;
 }
 
 .mobile-menu-toggle span {
@@ -1852,6 +1849,86 @@ textarea.form-control {
 }
 
 /* ==========================================================================
+   CONTACT METHODS SECTION
+   ========================================================================== */
+.contact-methods-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 3rem auto 0 auto;
+}
+
+.contact-method-card {
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-method-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-success);
+}
+
+.contact-method-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--color-light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: var(--color-success);
+  margin-bottom: 1.5rem;
+  transition: var(--transition-smooth);
+}
+
+.contact-method-card:hover .contact-method-icon {
+  background-color: var(--color-success);
+  color: var(--bg-primary);
+}
+
+.contact-method-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-method-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.contact-method-value a:hover {
+  color: var(--color-success);
+}
+
+.contact-method-note {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+  max-width: 280px;
+}
+
+@media (max-width: 768px) {
+  .contact-methods-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+}
+
+/* ==========================================================================
    RESPONSIVENESS (Media Queries)
    ========================================================================== */
 
@@ -1992,7 +2069,7 @@ textarea.form-control {
 /* Small Tablet & Mobile Screens (max-width: 768px) */
 @media (max-width: 768px) {
   .mobile-menu-toggle {
-    display: flex;
+    display: block;
   }
   
   .nav-menu {
