@@ -100,8 +100,87 @@
 
       <!-- Right Hero Visual -->
       <div class="hero-visual reveal">
-        <div class="hero-image-container">
-          <img src="file:///C:/Users/Syed%20Aashiq/.gemini/antigravity-ide/brain/1de63e41-6616-4721-81fc-7aa69615bb8b/hero_recycling_1782898474697.png" alt="Eco-Friendly Recycling Center">
+        <div class="hero-svg-container">
+          <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#22C55E" />
+                <stop offset="100%" stop-color="#15803D" />
+              </linearGradient>
+              <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#3B82F6" />
+                <stop offset="100%" stop-color="#1D4ED8" />
+              </linearGradient>
+              <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F97316" />
+                <stop offset="100%" stop-color="#EA580C" />
+              </linearGradient>
+              <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+                <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#111827" flood-opacity="0.08" />
+              </filter>
+            </defs>
+
+            <!-- Background Decorative Shapes -->
+            <circle cx="250" cy="250" r="220" fill="#F0FDF4" opacity="0.6" />
+            <circle cx="120" cy="120" r="60" fill="#EFF6FF" opacity="0.5" />
+            <circle cx="380" cy="380" r="80" fill="#FFF7ED" opacity="0.5" />
+
+            <!-- Sustainable Recycling Hub Building -->
+            <g filter="url(#dropShadow)">
+              <rect x="180" y="200" width="220" height="180" rx="16" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2" />
+              <rect x="200" y="220" width="80" height="140" rx="8" fill="#F3F4F6" />
+              <line x1="240" y1="220" x2="240" y2="360" stroke="#E5E7EB" stroke-width="2" />
+              <line x1="200" y1="290" x2="280" y2="290" stroke="#E5E7EB" stroke-width="2" />
+              <path d="M165 200 L290 130 L415 200 Z" fill="url(#greenGrad)" />
+              <rect x="210" y="160" width="35" height="20" rx="3" fill="#1E293B" transform="rotate(-29 210 160)" />
+              <rect x="255" y="135" width="35" height="20" rx="3" fill="#1E293B" transform="rotate(-29 255 135)" />
+              <rect x="300" y="110" width="35" height="20" rx="3" fill="#1E293B" transform="rotate(-29 300 110)" />
+              <rect x="295" y="230" width="90" height="30" rx="6" fill="#1E293B" />
+              <circle cx="310" cy="245" r="5" fill="#22C55E" />
+              <rect x="325" y="242" width="50" height="6" rx="3" fill="#E5E7EB" />
+              <rect x="295" y="280" width="90" height="80" rx="4" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="2" />
+              <line x1="295" y1="300" x2="385" y2="300" stroke="#D1D5DB" stroke-width="2" />
+              <line x1="295" y1="320" x2="385" y2="320" stroke="#D1D5DB" stroke-width="2" />
+              <line x1="295" y1="340" x2="385" y2="340" stroke="#D1D5DB" stroke-width="2" />
+            </g>
+
+            <!-- Eco Collect Recycling Truck -->
+            <g filter="url(#dropShadow)" class="truck-group">
+              <rect x="60" y="290" width="50" height="60" rx="8" fill="url(#blueGrad)" />
+              <rect x="90" y="295" width="20" height="25" rx="4" fill="#F3F4F6" />
+              <rect x="115" y="260" width="110" height="90" rx="12" fill="url(#greenGrad)" />
+              <path d="M160 305 L170 295 L180 305 M170 295 L170 315" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="170" cy="305" r="12" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4 2" />
+              <rect x="105" y="325" width="15" height="15" fill="#4B5563" />
+              <circle cx="85" cy="355" r="16" fill="#111827" stroke="#9CA3AF" stroke-width="4" />
+              <circle cx="85" cy="355" r="6" fill="#FFFFFF" />
+              <circle cx="150" cy="355" r="16" fill="#111827" stroke="#9CA3AF" stroke-width="4" />
+              <circle cx="150" cy="355" r="6" fill="#FFFFFF" />
+              <circle cx="195" cy="355" r="16" fill="#111827" stroke="#9CA3AF" stroke-width="4" />
+              <circle cx="195" cy="355" r="6" fill="#FFFFFF" />
+            </g>
+
+            <!-- Wind Turbine -->
+            <g class="turbine-group">
+              <line x1="420" y1="380" x2="420" y2="180" stroke="#9CA3AF" stroke-width="4" />
+              <g class="blades" transform="translate(420, 180)">
+                <path d="M0 0 L-10 -70 L10 -70 Z" fill="#D1D5DB" />
+                <path d="M0 0 L70 10 L70 -10 Z" fill="#E5E7EB" />
+                <path d="M0 0 L-60 40 L-50 55 Z" fill="#F3F4F6" />
+                <circle cx="0" cy="0" r="8" fill="#9CA3AF" />
+              </g>
+            </g>
+
+            <!-- Plants -->
+            <path d="M430 380 Q450 330 470 380 Z" fill="#22C55E" opacity="0.8" />
+            <path d="M410 380 Q430 310 450 380 Z" fill="#15803D" />
+            <circle cx="150" cy="380" r="15" fill="#16A34A" />
+            <circle cx="135" cy="380" r="12" fill="#15803D" />
+
+            <!-- Circular economy arrows -->
+            <path d="M125 180 A 100 100 0 0 1 315 105" stroke="url(#orangeGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 6" />
+            <path d="M320 115 L315 105 L305 118" stroke="url(#orangeGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
         </div>
         
         <!-- Floating Stat Cards -->
@@ -194,7 +273,7 @@
           <!-- Metals -->
           <div class="service-card reveal" data-category="metals">
             <div class="service-card-image">
-              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80" alt="Base Metals Scrap">
+              <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=600&q=80" alt="Base Metals Scrap">
               <div class="service-card-icon-floating">
                 <i class="fa-solid fa-cubes-stacked"></i>
               </div>
@@ -217,7 +296,7 @@
           <!-- E-waste -->
           <div class="service-card reveal" data-category="ewaste">
             <div class="service-card-image">
-              <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=600&q=80" alt="Electronics and E-Waste Scrap">
+              <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&w=600&q=80" alt="Electronics and E-Waste Scrap">
               <div class="service-card-icon-floating">
                 <i class="fa-solid fa-laptop-code"></i>
               </div>
@@ -240,7 +319,7 @@
           <!-- Appliances -->
           <div class="service-card reveal" data-category="appliances">
             <div class="service-card-image">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Household Appliances">
+              <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=600&q=80" alt="Household Appliances">
               <div class="service-card-icon-floating">
                 <i class="fa-solid fa-plug"></i>
               </div>
@@ -262,7 +341,7 @@
           <!-- Paper & Cardboard -->
           <div class="service-card reveal" data-category="paper">
             <div class="service-card-image">
-              <img src="https://images.unsplash.com/photo-1532156001-c247313c4157?auto=format&fit=crop&w=600&q=80" alt="Paper and Cardboard Scrap">
+              <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=600&q=80" alt="Paper and Cardboard Scrap">
               <div class="service-card-icon-floating">
                 <i class="fa-solid fa-newspaper"></i>
               </div>
@@ -284,7 +363,7 @@
           <!-- Vehicles & Parts -->
           <div class="service-card reveal" data-category="vehicles">
             <div class="service-card-image">
-              <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="Vehicles and Parts Scrap">
+              <img src="https://images.unsplash.com/photo-1616788494707-ec28f08d05a1?auto=format&fit=crop&w=600&q=80" alt="Vehicles and Parts Scrap">
               <div class="service-card-icon-floating">
                 <i class="fa-solid fa-car"></i>
               </div>
@@ -306,7 +385,7 @@
           <!-- Scrap Batteries -->
           <div class="service-card reveal" data-category="batteries">
             <div class="service-card-image">
-              <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80" alt="Scrap Batteries">
+              <img src="https://images.unsplash.com/photo-1622445262465-2481c4574875?auto=format&fit=crop&w=600&q=80" alt="Scrap Batteries">
               <div class="service-card-icon-floating">
                 <i class="fa-solid fa-car-battery"></i>
               </div>
@@ -480,7 +559,7 @@
 
       <div class="gallery-grid reveal">
         <div class="gallery-item row-2">
-          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80" alt="Iron Scrap">
+          <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80" alt="Iron Scrap">
           <div class="gallery-item-info">
             <span class="gallery-item-tag">Metals</span>
             <h3 class="gallery-item-title">Iron Scrap Pile</h3>
@@ -488,7 +567,7 @@
         </div>
 
         <div class="gallery-item col-2">
-          <img src="https://images.unsplash.com/photo-1603796846097-bee99e4a60c9?auto=format&fit=crop&w=1000&q=80" alt="E-Waste Scrap">
+          <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=1000&q=80" alt="E-Waste Scrap">
           <div class="gallery-item-info">
             <span class="gallery-item-tag">E-Waste</span>
             <h3 class="gallery-item-title">Old Monitors & Laptops</h3>
